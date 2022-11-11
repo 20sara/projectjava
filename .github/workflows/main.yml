@@ -13,10 +13,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: "login to Docker Hup"
-        run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN_PA }}
+        run: docker login --username Sara2Amin --password dckr_pat_pby9DR2-FS1LPjOZuwxst2RN5rQ
 
-      - name: "buling docker image"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/myimage .
-
-      - name: "push docker image"
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/myimage  
+       
